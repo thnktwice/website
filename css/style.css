@@ -5,9 +5,18 @@ body {
   	font-family: Helvetica, Geneva, Arial, SunSans-Regular,sans-serif
   }
 
+  #mc_embed_signup {
+    background:#ff9933; 
+    font:14px Helvetica,Arial,sans-serif; 
+  }
+
   #fond {
     width: 100%
   } 
+  #label {
+    width: auto;
+
+  }
   
   a: link {
   	color:blue

@@ -5,18 +5,50 @@ body {
   	font-family: Helvetica, Geneva, Arial, SunSans-Regular,sans-serif
   }
 
-  p {
-    color: #0099cc
-  }
 
   #mc_embed_signup {
     background:#ff9933; 
     font:14px Helvetica,Arial,sans-serif; 
   }
 
-  #fond {
-    width: 100%
-  } 
+  #slide1 {
+   background: url(../assets/presentation_holdit_2.png) center 50px no-repeat fixed;
+  }
+
+  #slide2 {
+   background: url(../assets/gare_paquets.png) center 0 no-repeat fixed;
+  }
+
+  #slide3 {
+   background: url(../assets/equipe_hold_it.jpg) center 0 no-repeat fixed;
+  }
+
+  #slide1, #slide2, #slide3 {
+    height:700px;
+    padding-top:100px;
+    background-size: cover;
+  }
+
+  /* Gestion du contenu */
+  .slide_inside {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  #slide1  .slide_inside p{
+    color: #ff9933;
+  }
+
+  #slide2 .slide_inside p {
+    width: 500px;
+    text-align:justify;
+  }
+
+  #slide3 .slide_inside {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top:50px;
+    padding:50px;
+  }
 
   
   a: link {

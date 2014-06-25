@@ -1,0 +1,19 @@
+%div{:class => "navbar navbar-inverse", :role => "navigation"}
+  %div{:class => "navbar-header"}
+    %button{:type => "button", :class => "navbar-toggle collapsed", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+      %span{:class => "icon-bar"}
+      %span{:class => "icon-bar"}
+      %span{:class => "icon-bar"}
+    %a{:class => "navbar-brand", :href => "/"} Home
+  %div{:class => "navbar-collapse collapse", :style=> "height: 1px;"}
+    %ul{:class => "nav navbar-nav"}
+      %li
+        = link_to 'Some Link'
+    %ul{:class => "nav navbar-nav navbar-right"}
+      %li= link_to 'A link'
+      %li.navbar-text= "Logged in as :"
+      %li= link_to current_person.email
+      %li= link_to 'Logout ?',  destroy_person_session_path, :method => :delete
+
+
+
